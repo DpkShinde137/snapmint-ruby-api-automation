@@ -1,0 +1,33 @@
+{
+  "name": "snapmint-api-automation",
+  "version": "1.0.0",
+  "description": "Snapmint API Automation Framework using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "automation",
+    "snapmint"
+  ],
+  "author": "QA Automation Architect",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.45.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.2"
+  }
+}
